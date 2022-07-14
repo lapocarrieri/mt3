@@ -27,7 +27,7 @@ vocabularies.build_codec.vocab_config = %VOCAB_CONFIG
 # `learning_rate` is set by `Trainer.learning_rate_fn`.
 OPTIMIZER = @adafactor.Adafactor()
 adafactor.Adafactor:
-  decay_rate = 0.8
+  decay_rate = 0.7
   step_offset = 0
   logical_factor_rules = @adafactor.standard_logical_factor_rules()
 
@@ -49,12 +49,12 @@ network.T5Config:
   vocab_size = @vocabularies.num_embeddings()
   dtype = 'float32'
   emb_dim = 512
-  num_heads = 6
+  num_heads = 7
   num_encoder_layers = 8
   num_decoder_layers = 8
   head_dim = 64
   mlp_dim = 1024
   mlp_activations = ('gelu', 'linear')
-  dropout_rate = 0.1
+  dropout_rate = 0.5
   logits_via_embedding = False
 vocabularies.num_embeddings.vocabulary = %OUTPUT_VOCABULARY
