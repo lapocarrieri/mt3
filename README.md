@@ -10,6 +10,7 @@ The second one is used to create a colab notebook that can transform in MIDI fil
 
 ## Project
 
-We don't touch the code but we simply add comments and reshape the colab notebook.
+We don't touch the code but we add many comments and reshape the colab notebook in order
+to be simply understandable from everyone.
 Is there the possibility to train the model but since it is a transformer, 
 trying we found that it took more powerful computers and a lot of time
